@@ -61,19 +61,34 @@
             color: #888;
         }
 
-        .btn {
-            display: inline-block;
+        .action {
             margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn {
             padding: 8px 15px;
             background-color: #2c7be5;
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-size: 14px;
+            border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
             background-color: #1a5edb;
+        }
+
+        .password-input {
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            width: 120px;
         }
     </style>
 </head>
@@ -88,12 +103,17 @@
 
         <div class="info">
             <p><span class="label">학년:</span> 대학교 n학년</p>
-            <p><span class="label">전공:</span> 컴퓨터공학부 </p>
-            <p><span class="label">취미:</span> 코딩 </p>
+            <p><span class="label">전공:</span> 컴퓨터공학부</p>
+            <p><span class="label">수업:</span> 웹 프로그래밍의 기초와 이해</p>
+            <p><span class="label">취미:</span> 코딩</p>
             <p><span class="label">목표:</span> 꾸준히 성장하는 학생이 되기</p>
         </div>
-        
-        <a href="#" class="btn">더 알아보기</a>
+
+        <!-- 버튼 + 비밀번호 입력 -->
+        <div class="action">
+            <input type="password" placeholder="비밀번호" class="password-input">
+            <button class="btn">더 알아보기</button>
+        </div>
 
         <div class="footer">
             감사합니다!
