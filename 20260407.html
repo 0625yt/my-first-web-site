@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 페이지</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", sans-serif;
+      background-color: #f5f7fb;
+      color: #222;
+    }
+
+    .container {
+      width: 420px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    h1 {
+      text-align: center;
+      color: #f4b400;
+      margin-bottom: 25px;
+      font-size: 32px;
+    }
+
+    .notice-box {
+      text-align: center;
+      margin-bottom: 25px;
+      background-color: #d93025;
+      color: white;
+      padding: 18px;
+      border-radius: 12px;
+      line-height: 1.8;
+    }
+
+    .notice-box a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .notice-box a:hover {
+      text-decoration: underline;
+    }
+
+    .login-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .login-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+
+    .label-box {
+      width: 120px;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .input-box {
+      flex: 1;
+    }
+
+    .input-box input {
+      width: 100%;
+      height: 38px;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .input-box input:focus {
+      outline: none;
+      border-color: #4285f4;
+      box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.2);
+    }
+
+    .tooltip-text {
+      visibility: hidden;
+      opacity: 0;
+      width: 230px;
+      background-color: gray;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      border-radius: 8px;
+      position: absolute;
+      top: -10px;
+      left: 125px;
+      z-index: 1;
+      transition: opacity 0.3s;
+      font-size: 13px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .label-box:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .special-text {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+
+    .btn-area {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .login-btn {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #2f6fdb;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>로그인</h1>
+
+    <p class="notice-box">
+      로그인하려면 아이디와 패스워드를 입력하세요.<br>
+      <b><a href="https://www.syu.ac.kr" target="_blank">삼육대학교</a></b><br>
+      &lt;두 개의 값은 같다.&gt;<br>
+      &lt;삼육대학교&gt; &lt;/삼육대학교&gt; 태그를 사용해볼까?
+    </p>
+
+    <ul class="login-list">
+      <li class="login-row">
+        <div class="label-box">
+          아이디
+          <span class="tooltip-text">학번을 입력해주세요.</span>
+        </div>
+        <div class="input-box">
+          <input type="text" name="userId" id="userId" placeholder="아이디 입력">
+        </div>
+      </li>
+
+      <li class="login-row">
+        <div class="label-box">
+          패스워드
+          <span class="tooltip-text">대문자, 소문자, 숫자, 특수문자를 조합해야 합니다.</span>
+        </div>
+        <div class="input-box">
+          <input type="password" name="userPw" id="userPw" placeholder="비밀번호 입력">
+        </div>
+      </li>
+    </ul>
+
+    <div class="btn-area">
+      <button class="login-btn">로그인</button>
+    </div>
+
+    <p class="special-text">&amp; 엠퍼센트 ; 세미콜론</p>
+  </div>
+</body>
+</html>
