@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+}
+
+/* 가로 화면이 800px 이하일 때 */
+@media screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* 가로 화면이 700px 이하일 때 */
+@media screen and (max-width: 700px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* 가로 화면이 600px 이하일 때 */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/* 가로 화면이 400px 이하일 때 */
+@media screen and (max-width: 400px) {
+    body {
+        background-color: pink;
+    }
+}

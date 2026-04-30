@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  margin: 30px auto;
+  border: 1px solid black;
+}
+
+.nav {
+  width: 200px;
+  background-color: #eeeeee;
+  padding: 20px;
+  border-right: 1px solid black;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* 화면이 700px 이하일 때 */
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav {
+    width: auto;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+/* 화면이 400px 이하일 때 */
+@media screen and (max-width: 400px) {
+  body {
+    background-color: #f2f2f2;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
